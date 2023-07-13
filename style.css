@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background: #232323;
+}
+
+nav{
+    position: fixed;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgb(225, 240, 253);
+    z-index: 10;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    display: block;
+}
+
+nav::-webkit-scrollbar{
+    width: 0;
+}
+
+h2{
+    margin: 5px 15px;
+    margin-top: 20px;
+    border-bottom: 2px solid #232323;
+}
+
+#catagories{
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+}
+
+#letter{
+    position: relative;
+    height: 260px;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+    margin-top: 5px;
+}
+
+#letter span{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#color{
+    position: relative;
+    height: 200px;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    margin-top: 5px;
+}
+
+#color span{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#type{
+    position: relative;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: 5px;
+    margin-top: 5px;
+}
+
+#type span{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logo{
+    position: relative;
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: 5px;
+    margin-top: 5px;
+}
+
+#logo span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#catagories p{
+    background-color:rgb(221, 228, 235);
+    padding: 5px 0;
+    padding-left: 5px;
+}
+
+nav span:hover{
+    background-color: cyan;
+}
+
+#color-pallete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 80vw;
+    min-height: 100vh;
+    background-color: rgb(231, 228, 223);
+    padding-left:30px;
+}
+
+#pallete{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    gap: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#pallete li{
+    position: relative;
+    list-style: none;
+    min-height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+#pallete li p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+}
+
+#pallete li label{
+    font-size: 16px;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+.fa-check{
+    color: green;
+}
