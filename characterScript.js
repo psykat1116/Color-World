@@ -24,25 +24,23 @@ characters.forEach((elem) => {
         pallete.appendChild(li);
       });
     } else if (ch == "X") {
-      letterZ.forEach((e) => {
+      letterX.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
         pallete.appendChild(li);
       });
     } else if (ch == "W") {
-      letterZ.forEach((e) => {
+      letterW.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
         pallete.appendChild(li);
       });
     } else if (ch == "V") {
-      letterZ.forEach((e) => {
+      letterV.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
@@ -51,16 +49,15 @@ characters.forEach((elem) => {
         pallete.appendChild(li);
       });
     } else if (ch == "U") {
-      letterZ.forEach((e) => {
+      letterU.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
         pallete.appendChild(li);
       });
     } else if (ch == "T") {
-      letterZ.forEach((e) => {
+      letterT.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
@@ -69,7 +66,7 @@ characters.forEach((elem) => {
         pallete.appendChild(li);
       });
     } else if (ch == "S") {
-      letterZ.forEach((e) => {
+      letterS.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
