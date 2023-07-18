@@ -1,240 +1,228 @@
-let characters = document.querySelectorAll("#letter span");
+let brands = document.querySelectorAll("#logo span");
 
-characters.forEach((elem) => {
+brands.forEach((elem) => {
   elem.addEventListener("click", () => {
     pallete.querySelectorAll("li").forEach((e) => {
       e.remove();
     });
-    let ch = elem.innerHTML;
-    if (ch == "Z") {
-      letterZ.forEach((e) => {
+    console.log(elem.childNodes[0].classList[1]);
+    let ch = elem.childNodes[0].classList[1];
+    if (ch == "fa-facebook") {
+      facebookShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "Y") {
-      letterY.forEach((e) => {
+    } else if (ch == "fa-twitter") {
+      twitterShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "X") {
-      letterX.forEach((e) => {
+    } else if (ch == "fa-instagram") {
+      instagramShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "W") {
-      letterW.forEach((e) => {
+    } else if (ch == "fa-youtube") {
+      youtubeShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "V") {
-      letterV.forEach((e) => {
+    } else if (ch == "fa-amazon") {
+      amazonShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "U") {
-      letterU.forEach((e) => {
+    } else if (ch == "fa-facebook-messenger") {
+      messengerShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "T") {
-      letterT.forEach((e) => {
+    } else if (ch == "fa-slack") {
+      slackShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "S") {
-      letterS.forEach((e) => {
+    } else if (ch == "fa-pinterest") {
+      pinterestShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "R") {
-      letterR.forEach((e) => {
+    } else if (ch == "fa-airbnb") {
+      airbnbShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "Q") {
-      letterQ.forEach((e) => {
+    } else if (ch == "fa-google") {
+      googleShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "P") {
-      letterP.forEach((e) => {
+    } else if (ch == "fa-whatsapp") {
+      whatsappShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "O") {
-      letterO.forEach((e) => {
+    } else if (ch == "fa-spotify") {
+      spotifyShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "N") {
-      letterN.forEach((e) => {
+    } else if (ch == "fa-tiktok") {
+      tiktokShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "M") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-lyft") {
+      lyftShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "L") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-android") {
+      androidShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "K") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-apple") {
+      appleShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "J") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-microsoft") {
+      microsoftShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "I") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-snapchat") {
+      snapchatShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "H") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-xbox") {
+      xboxShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "G") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-linkedin") {
+      linkedinShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "F") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-discord") {
+      discordShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "E") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-telegram") {
+      telegramShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "D") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-google-play") {
+      playstoreShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
-    } else if (ch == "C") {
-      letterZ.forEach((e) => {
+    } else if (ch == "fa-paypal") {
+      paypalShades.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
-        pallete.appendChild(li);
-      });
-    } else if (ch == "B") {
-      letterZ.forEach((e) => {
-        let li = document.createElement("li");
-        let text = `<p>${e.code}</p><label>${e.name}</label>`;
-        li.innerHTML = text;
-        li.style.background = e.code;
-        li.style.color = "#fff";
-        pallete.appendChild(li);
-      });
-    } else {
-      letterZ.forEach((e) => {
-        let li = document.createElement("li");
-        let text = `<p>${e.code}</p><label>${e.name}</label>`;
-        li.innerHTML = text;
-        li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
         pallete.appendChild(li);
       });
     }
-    copyHexCode();
   });
 });
