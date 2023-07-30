@@ -128,7 +128,7 @@ ul li{
     padding-left: 5px;
 }
 
-nav span:hover{
+nav span:hover,nav span.active{
     background-color: cyan;
 }
 
@@ -145,7 +145,7 @@ nav span:hover{
 #pallete{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(auto-fill,170px);
     grid-template-rows: repeat(auto,1fr);
     gap: 5px;
 }
@@ -159,6 +159,8 @@ nav span:hover{
     list-style: none;
     min-height: 120px;
     width: 120px;
+    border-radius: 4px;
+    border: 1px solid;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -176,11 +178,7 @@ nav span:hover{
 }
 
 #pallete li label{
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 5px;
     width: 100%;
-}
-
-.fa-check{
-    color: green;
 }

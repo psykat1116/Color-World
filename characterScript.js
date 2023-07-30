@@ -12,6 +12,7 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         li.style.color = "#fff";
         pallete.appendChild(li);
       });
@@ -21,6 +22,7 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "X") {
@@ -29,6 +31,7 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "W") {
@@ -36,6 +39,7 @@ characters.forEach((elem) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
+        li.style.borderColor = e.color;
         li.style.background = e.code;
         pallete.appendChild(li);
       });
@@ -45,6 +49,7 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         li.style.color = "#fff";
         pallete.appendChild(li);
       });
@@ -54,6 +59,7 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "T") {
@@ -63,6 +69,7 @@ characters.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = "#fff";
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "S") {
@@ -71,6 +78,7 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         li.style.color = "#fff";
         pallete.appendChild(li);
       });
@@ -80,6 +88,7 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         li.style.color = "#fff";
         pallete.appendChild(li);
       });
@@ -89,6 +98,7 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "P") {
@@ -98,6 +108,7 @@ characters.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = "#fff";
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "O") {
@@ -107,6 +118,7 @@ characters.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = "#fff";
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "N") {
@@ -115,123 +127,137 @@ characters.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "M") {
-      letterZ.forEach((e) => {
+      letterM.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "L") {
-      letterZ.forEach((e) => {
+      letterL.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "K") {
-      letterZ.forEach((e) => {
+      letterK.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "J") {
-      letterZ.forEach((e) => {
+      letterJ.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "I") {
-      letterZ.forEach((e) => {
+      letterI.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "H") {
-      letterZ.forEach((e) => {
+      letterH.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "G") {
-      letterZ.forEach((e) => {
+      letterG.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "F") {
-      letterZ.forEach((e) => {
+      letterF.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "E") {
-      letterZ.forEach((e) => {
+      letterE.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "D") {
-      letterZ.forEach((e) => {
+      letterD.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "C") {
-      letterZ.forEach((e) => {
+      letterC.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "B") {
-      letterZ.forEach((e) => {
+      letterB.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else {
-      letterZ.forEach((e) => {
+      letterA.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
-        li.style.color = "#fff";
+        li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     }

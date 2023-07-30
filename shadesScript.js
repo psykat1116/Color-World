@@ -13,6 +13,7 @@ shadeColors.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (color == "Blue") {
@@ -21,6 +22,7 @@ shadeColors.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (color == "Black") {
@@ -29,6 +31,7 @@ shadeColors.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         li.style.color = "#fff";
         pallete.appendChild(li);
       });
@@ -38,6 +41,7 @@ shadeColors.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (color == "Pink") {
@@ -46,6 +50,7 @@ shadeColors.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (color == "Green") {
@@ -54,6 +59,7 @@ shadeColors.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (color == "Orange") {
@@ -62,6 +68,7 @@ shadeColors.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (color == "Gray") {
@@ -71,6 +78,7 @@ shadeColors.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = "#fff";
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (color == "Purple") {
@@ -80,6 +88,7 @@ shadeColors.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = "#fff";
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (color == "Brown") {
@@ -89,6 +98,7 @@ shadeColors.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = "#fff";
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else {
@@ -97,23 +107,10 @@ shadeColors.forEach((elem) => {
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
         li.innerHTML = text;
         li.style.background = e.code;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     }
     copyHexCode();
   });
 });
-
-function copyHexCode() {
-  pallete.querySelectorAll("li").forEach((e) => {
-    let colorNode = e.childNodes[0],
-      colorCode = colorNode.innerText;
-    e.addEventListener("click", () => {
-      navigator.clipboard.writeText(colorCode);
-      colorNode.innerHTML = `<i class="fa-solid fa-check"></i>`;
-      setTimeout(() => {
-        colorNode.innerText = colorCode;
-      }, 1000);
-    });
-  });
-}

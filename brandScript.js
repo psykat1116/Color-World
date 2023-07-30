@@ -14,6 +14,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-twitter") {
@@ -23,6 +24,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-instagram") {
@@ -32,6 +34,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-youtube") {
@@ -41,6 +44,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-amazon") {
@@ -50,6 +54,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-facebook-messenger") {
@@ -59,6 +64,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-slack") {
@@ -68,6 +74,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-pinterest") {
@@ -77,6 +84,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-airbnb") {
@@ -86,6 +94,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-google") {
@@ -95,6 +104,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-whatsapp") {
@@ -104,6 +114,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-spotify") {
@@ -113,6 +124,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-tiktok") {
@@ -122,6 +134,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-lyft") {
@@ -131,6 +144,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-android") {
@@ -140,6 +154,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-apple") {
@@ -149,6 +164,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-microsoft") {
@@ -158,6 +174,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-snapchat") {
@@ -167,6 +184,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-xbox") {
@@ -176,6 +194,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-linkedin") {
@@ -185,6 +204,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-discord") {
@@ -194,6 +214,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-telegram") {
@@ -203,6 +224,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-google-play") {
@@ -212,6 +234,7 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     } else if (ch == "fa-paypal") {
@@ -221,8 +244,10 @@ brands.forEach((elem) => {
         li.innerHTML = text;
         li.style.background = e.code;
         li.style.color = e.color;
+        li.style.borderColor = e.color;
         pallete.appendChild(li);
       });
     }
+    copyHexCode();
   });
 });
