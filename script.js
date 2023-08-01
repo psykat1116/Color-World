@@ -1,4 +1,31 @@
 let options = document.querySelectorAll("span");
+let pallete = document.getElementById("pallete");
+let navBtn = document.querySelector("nav button");
+let colorPallete = document.getElementById("color-pallete");
+let palleteBtn = colorPallete.querySelector("button");
+let navbar = document.querySelector("nav");
+let numOfColors = document.querySelector("#details p");
+
+let screenWidth, navWidth;
+
+function screenChange() {
+    screenWidth = screen.width;
+    if (screenWidth < 500) {
+        navWidth = "60vw";
+    }
+    else if (screenWidth >= 500 && screenWidth < 760) {
+        navWidth = "50vw";
+    }
+    else if (screenWidth >= 760 && screenWidth <= 1023) {
+        navWidth = "35vw";
+    }
+    else if (screenWidth > 1023 && screenWidth < 1200) {
+        navWidth = "30vw";
+    }
+    else {
+        navWidth = "20vw";
+    }
+}
 
 options.forEach((tag) => {
     tag.addEventListener("click", () => {
@@ -16,10 +43,10 @@ function initialize() {
         li.style.color = e.color;
         pallete.appendChild(li);
     });
+    numOfColors.innerHTML = `Number of Colors is ${letterA.length}`;
     copyHexCode();
+    screenChange();
 }
-
-window.addEventListener("load",initialize);
 
 function copyHexCode() {
     pallete.querySelectorAll("li").forEach((e) => {
@@ -34,3 +61,14 @@ function copyHexCode() {
         });
     });
 }
+
+navBtn.addEventListener("click", () => {
+    navbar.style.width = `0px`;
+})
+
+palleteBtn.addEventListener("click", () => {
+    navbar.style.width = `${navWidth}`;
+})
+
+window.addEventListener("load", initialize);
+window.addEventListener("resize", screenChange);
