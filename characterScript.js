@@ -5,6 +5,9 @@ characters.forEach((elem) => {
     pallete.querySelectorAll("li").forEach((e) => {
       e.remove();
     });
+    themepallete.querySelectorAll("li").forEach((e) => {
+      e.remove();
+    });
     let ch = elem.innerHTML;
     if (ch == "Z") {
       letterZ.forEach((e) => {

@@ -5,7 +5,9 @@ brands.forEach((elem) => {
     pallete.querySelectorAll("li").forEach((e) => {
       e.remove();
     });
-    console.log(elem.childNodes[0].classList[1]);
+    themepallete.querySelectorAll("li").forEach((e) => {
+      e.remove();
+    });
     let ch = elem.childNodes[0].classList[1];
     if (ch == "fa-facebook") {
       facebookShades.forEach((e) => {

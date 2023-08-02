@@ -1,14 +1,25 @@
 let options = document.querySelectorAll("span");
 let pallete = document.getElementById("pallete");
+let themepallete = document.getElementById("themepallete");
 let navBtn = document.querySelector("nav button");
 let colorPallete = document.getElementById("color-pallete");
 let palleteBtn = colorPallete.querySelector("button");
 let navbar = document.querySelector("nav");
 let numOfColors = document.querySelector("#details p");
+let letterOpt = document.getElementById("letter");
+let shadeOpt = document.getElementById("color");
+let themeOpt = document.getElementById("type");
 
-let screenWidth, navWidth;
+// *-------------------------Declareing All The Necessary variables and arrays----------------------------------*
 
-function screenChange() {
+let screenWidth, navWidth = "20vw";
+const letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+const shades = ["Black", "White", "Red", "Blue", "Purple", "Orange", "Green", "Brown", "Pink", "Yellow", "Gray"];
+const themes = ["Halloween", "Sky", "Wedding", "Coffee", "Cream", "Skin", "Sunset", "Night", "Space", "Food", "Rainbow", "Earth", "Nature", "Winter", "Summer", "Warm", "Cold", "Dark", "Light", "Neon", "Pastel", "Vintage"];
+
+// *-------------------Function For Changing Side Navbar Width While The Device Width is Changing-----------------------*
+
+const screenChange = () => {
     screenWidth = screen.width;
     if (screenWidth < 500) {
         navWidth = "60vw";
@@ -27,6 +38,8 @@ function screenChange() {
     }
 }
 
+// *------------------Function For Chnaging Active Class When Clicked On Different Options---------------------*
+
 options.forEach((tag) => {
     tag.addEventListener("click", () => {
         document.querySelector("span.active").classList.remove("active");
@@ -34,7 +47,9 @@ options.forEach((tag) => {
     })
 });
 
-function initialize() {
+// *-----------------Function For Initialize All The Necessary options in the navbar and colors in the pallete-------------------*
+
+const initialize = () => {
     letterA.forEach((e) => {
         let li = document.createElement("li");
         let text = `<p>${e.code}</p><label>${e.name}</label>`;
@@ -48,7 +63,9 @@ function initialize() {
     screenChange();
 }
 
-function copyHexCode() {
+// *----------------------Function For Copying The Hex Color Code----------------------------* 
+
+const copyHexCode = () => {
     pallete.querySelectorAll("li").forEach((e) => {
         let colorNode = e.childNodes[0],
             colorCode = colorNode.innerText;
@@ -62,6 +79,23 @@ function copyHexCode() {
     });
 }
 
+// *----------------------Function For Copying The Theme Hex Color Codes----------------------------* 
+
+const copyThemeHexCode = () => {
+    themepallete.querySelectorAll("li section").forEach((e) => {
+        let colorCode = e.innerText;
+        e.addEventListener("click", () => {
+            navigator.clipboard.writeText(colorCode);
+            e.innerHTML = `<i class="fa-solid fa-check"></i>`;
+            setTimeout(() => {
+                e.innerText = colorCode;
+            }, 1000);
+        })
+    })
+}
+
+// *-------------------Event Firing For collapsing and Expanding Navbar----------------------*
+
 navBtn.addEventListener("click", () => {
     navbar.style.width = `0px`;
 })
@@ -69,6 +103,8 @@ navBtn.addEventListener("click", () => {
 palleteBtn.addEventListener("click", () => {
     navbar.style.width = `${navWidth}`;
 })
+
+// *------------------Event Firing For Initializing The Content and resizing the screen-------------------*
 
 window.addEventListener("load", initialize);
 window.addEventListener("resize", screenChange);

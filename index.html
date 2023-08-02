@@ -10,7 +10,7 @@
     />
     <link rel="icon" type="image/png" href="icon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Color World</title>
+    <title>PsyColors - An Infite Collection Of Colors</title>
   </head>
   <body>
     <nav>
@@ -52,16 +52,16 @@
           <p>Shades</p>
           <div id="color">
             <span>Black</span>
-            <span>Blue</span>
+            <span>White</span>
             <span>Brown</span>
-            <span>Gray</span>
             <span>Green</span>
+            <span>Gray</span>
+            <span>Red</span>
+            <span>Yellow</span>
+            <span>Blue</span>
+            <span>Purple</span>
             <span>Orange</span>
             <span>Pink</span>
-            <span>Purple</span>
-            <span>Red</span>
-            <span>White</span>
-            <span>Yellow</span>
           </div>
         </li>
         <li id="company">
@@ -93,8 +93,8 @@
             <span><i class="fa-brands fa-lyft"></i></span>
           </div>
         </li>
-        <li id="Mood">
-          <p>Mood</p>
+        <li id="theme">
+          <p>Theme</p>
           <div id="type">
             <span>Halloween</span>
             <span>Sky</span>
@@ -109,12 +109,12 @@
             <span>Rainbow</span>
             <span>Earth</span>
             <span>Nature</span>
+            <span>Dark</span>
+            <span>Light</span>
             <span>Winter</span>
             <span>Summer</span>
             <span>Warm</span>
             <span>Cold</span>
-            <span>Dark</span>
-            <span>Light</span>
             <span>Neon</span>
             <span>Pastel</span>
             <span>Vintage</span>
@@ -126,16 +126,27 @@
     <div id="color-pallete">
       <div id="details">
         <button><i class="fa-solid fa-bars"></i></button>
-        <p></p>
+        <p>
+          <!--Number Of Colors For Each Type Will Be Rendered Here-->
+        </p>
       </div>
-      <ul id="pallete"></ul>
+      <ul id="pallete">
+        <!--Sigle Color Pallete is rendered here-->
+      </ul>
+      <ul id="themepallete">
+        <!--Multiple Mean Theme Or Moody Colors Is Rendered Here-->
+      </ul>
     </div>
+    <!--All The Script Files Are Here-->
+    <!--!Dont Change The Order Of Added JS Files It Can Destroy The WebPage-->
     <script src="shades.js"></script>
     <script src="brands.js"></script>
     <script src="character.js"></script>
+    <script src="theme.js"></script>
     <script src="script.js"></script>
     <script src="shadesScript.js"></script>
     <script src="brandScript.js"></script>
     <script src="characterScript.js"></script>
+    <script src="themeScript.js"></script>
   </body>
 </html>

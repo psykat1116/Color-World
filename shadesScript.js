@@ -6,6 +6,9 @@ shadeColors.forEach((elem) => {
     pallete.querySelectorAll("li").forEach((e) => {
       e.remove();
     });
+    themepallete.querySelectorAll("li").forEach((e) => {
+      e.remove();
+    });
     if (color == "Red") {
       shadesOfRed.forEach((e) => {
         let li = document.createElement("li");
