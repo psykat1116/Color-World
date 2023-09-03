@@ -22,19 +22,19 @@ const themes = ["Halloween", "Sky", "Wedding", "Coffee", "Cream", "Skin", "Sunse
 const screenChange = () => {
     screenWidth = screen.width;
     if (screenWidth < 500) {
-        navWidth = "60vw";
+        navWidth = "250px";
     }
     else if (screenWidth >= 500 && screenWidth < 760) {
-        navWidth = "50vw";
+        navWidth = "300px";
     }
     else if (screenWidth >= 760 && screenWidth <= 1023) {
-        navWidth = "35vw";
+        navWidth = "350px";
     }
     else if (screenWidth > 1023 && screenWidth < 1200) {
-        navWidth = "30vw";
+        navWidth = "300px";
     }
     else {
-        navWidth = "20vw";
+        navWidth = "270px";
     }
 }
 
@@ -97,12 +97,32 @@ const copyThemeHexCode = () => {
 // *-------------------Event Firing For collapsing and Expanding Navbar----------------------*
 
 navBtn.addEventListener("click", () => {
-    navbar.style.width = `0px`;
+    navbar.style.width = '0px';
 })
 
 palleteBtn.addEventListener("click", () => {
     navbar.style.width = `${navWidth}`;
 })
+
+pallete.addEventListener("click", () => {
+    navbar.style.width = '0px';
+})
+
+themepallete.addEventListener("click", () => {
+    navbar.style.width = '0px';
+})
+
+// *---------------------------Compare function for sorting colors---------------------------------------*
+
+function compare(a, b) {
+    if (a.name < b.name) {
+        return -1;
+    }
+    if (a.name > b.name) {
+        return 1;
+    }
+    return 0;
+}
 
 // *------------------Event Firing For Initializing The Content and resizing the screen-------------------*
 

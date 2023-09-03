@@ -1537,3 +1537,15 @@ const shadesOfOrange = [
   { name: "Faded Orange", code: "#CD946A", color: "#FFFFFF" },
   { name: "Luminous Bright Orange", code: "#FFB700", color: "#000000" },
 ];
+
+shadesOfWhite.sort(compare);
+shadesOfGray.sort(compare);
+shadesOfGreen.sort(compare);
+shadesOfBlack.sort(compare);
+shadesOfPink.sort(compare);
+shadesOfPurple.sort(compare);
+shadesOfOrange.sort(compare);
+shadesOfBrown.sort(compare);
+shadesOfYellow.sort(compare);
+shadesOfRed.sort(compare);
+shadesOfBlue.sort(compare);

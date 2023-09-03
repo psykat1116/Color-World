@@ -4077,3 +4077,30 @@ const letterA = [
   { name: "Azure Blue", code: "#225F78", color: "#FFFFFF" },
   { name: "Azureish White", code: "#DBE9F4", color: "#000000" },
 ];
+
+letterA.sort(compare);
+letterB.sort(compare);
+letterC.sort(compare);
+letterD.sort(compare);
+letterE.sort(compare);
+letterF.sort(compare);
+letterG.sort(compare);
+letterH.sort(compare);
+letterI.sort(compare);
+letterJ.sort(compare);
+letterK.sort(compare);
+letterL.sort(compare);
+letterM.sort(compare);
+letterN.sort(compare);
+letterO.sort(compare);
+letterP.sort(compare);
+letterQ.sort(compare);
+letterR.sort(compare);
+letterS.sort(compare);
+letterT.sort(compare);
+letterU.sort(compare);
+letterV.sort(compare);
+letterW.sort(compare);
+letterX.sort(compare);
+letterY.sort(compare);
+letterZ.sort(compare);
