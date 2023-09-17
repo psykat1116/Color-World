@@ -361,6 +361,54 @@ themeColors.forEach((theme) => {
             })
             numOfColors.innerHTML = `Number of Palletes is ${winter.length}`;
         }
+        else if (th == "Summer") {
+            summer.forEach((color) => {
+                let li = document.createElement("li");
+                li.style.width = "230px";
+                li.style.height = "240px";
+                let text = `
+                    <section style="background: ${color.colorA};">${color.colorA}</section>
+                    <section style="background: ${color.colorB};">${color.colorB}</section>
+                    <section style="background: ${color.colorC};">${color.colorC}</section>
+                    <section style="background: ${color.colorD};">${color.colorD}</section>
+                `;
+                li.innerHTML = text;
+                themepallete.appendChild(li);
+            })
+            numOfColors.innerHTML = `Number of Palletes is ${summer.length}`;
+        }
+        else if (th == "Warm") {
+            warm.forEach((color) => {
+                let li = document.createElement("li");
+                li.style.width = "230px";
+                li.style.height = "240px";
+                let text = `
+                    <section style="background: ${color.colorA};">${color.colorA}</section>
+                    <section style="background: ${color.colorB};">${color.colorB}</section>
+                    <section style="background: ${color.colorC};">${color.colorC}</section>
+                    <section style="background: ${color.colorD};">${color.colorD}</section>
+                `;
+                li.innerHTML = text;
+                themepallete.appendChild(li);
+            })
+            numOfColors.innerHTML = `Number of Palletes is ${warm.length}`;
+        }
+        else if (th == "Cold") {
+            cold.forEach((color) => {
+                let li = document.createElement("li");
+                li.style.width = "230px";
+                li.style.height = "240px";
+                let text = `
+                    <section style="background: ${color.colorA};">${color.colorA}</section>
+                    <section style="background: ${color.colorB};">${color.colorB}</section>
+                    <section style="background: ${color.colorC};">${color.colorC}</section>
+                    <section style="background: ${color.colorD};">${color.colorD}</section>
+                `;
+                li.innerHTML = text;
+                themepallete.appendChild(li);
+            })
+            numOfColors.innerHTML = `Number of Palletes is ${cold.length}`;
+        }
         copyThemeHexCode();
     })
 })

@@ -17,6 +17,10 @@ const letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 const shades = ["Black", "White", "Red", "Blue", "Purple", "Orange", "Green", "Brown", "Pink", "Yellow", "Gray"];
 const themes = ["Halloween", "Sky", "Wedding", "Coffee", "Cream", "Skin", "Sunset", "Night", "Space", "Food", "Rainbow", "Earth", "Nature", "Winter", "Summer", "Warm", "Cold", "Dark", "Light", "Neon", "Pastel", "Vintage"];
 
+// *-------------------Set the current Year for the copywrite area-----------------------*
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 // *-------------------Function For Changing Side Navbar Width While The Device Width is Changing-----------------------*
 
 const screenChange = () => {
